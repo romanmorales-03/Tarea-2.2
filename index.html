@@ -14,18 +14,18 @@
             <img src="logo.png" alt="Metcon">
 		</div>
         <h1>Registro de Datos</h1>  
-        <form action="">
+        <form action="" onsubmit="return validarFormulario()">
     		<label for="ledad">Clave</label>
-        <input type="number" id="lclave" name="clave" placeholder="clave de empleado.." min="1" required>
+        <input type="number" id="lclave" name="clave" placeholder="clave de empleado..">
 
         <label for="fnom">Nombre</label>
-    		<input type="text" id="fnom" name="nombre" onkeyup="convertirNomMayusculas()" placeholder="Escriba su nombre.." required>
+    		<input type="text" id="fnom" name="nombre" onkeyup="convertirNomMayusculas()" placeholder="Escriba su nombre..">
 
     	<label for="lappat">Apellido Paterno</label>
-    		<input type="text" id="lappat" name="appat" onkeyup="convertirApePatMayusculas()" placeholder="Apellido paterno.." required>
+    		<input type="text" id="lappat" name="appat" onkeyup="convertirApePatMayusculas()" placeholder="Apellido paterno..">
 
 		<label for="lappat">Apellido Materno</label>
-    		<input type="text" id="lapmat" name="apmat" onkeyup="convertirApeMatAMayusculas()" placeholder="Apellido materno.." required>
+    		<input type="text" id="lapmat" name="apmat" onkeyup="convertirApeMatAMayusculas()" placeholder="Apellido materno..">
         
     		<input type="submit" value="Submit">
   		</form>		
