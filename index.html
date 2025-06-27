@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="estilos.css">
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<main>
+        <div class="container">
+            <img src="logo.png" alt="Metcon">
+		</div>
+        <h1>Registro de Datos</h1>  
+        <form action="">
+    		<label for="ledad">Clave</label>
+        <input type="number" id="lclave" name="clave" placeholder="clave de empleado.." min="1" required>
+
+        <label for="fnom">Nombre</label>
+    		<input type="text" id="fnom" name="nombre" onkeyup="convertirNomMayusculas()" placeholder="Escriba su nombre.." required>
+
+    	<label for="lappat">Apellido Paterno</label>
+    		<input type="text" id="lappat" name="appat" onkeyup="convertirApePatMayusculas()" placeholder="Apellido paterno.." required>
+
+		<label for="lappat">Apellido Materno</label>
+    		<input type="text" id="lapmat" name="apmat" onkeyup="convertirApeMatAMayusculas()" placeholder="Apellido materno.." required>
+        
+    		<input type="submit" value="Submit">
+  		</form>		
+	</main>
+</body>
+</html>
